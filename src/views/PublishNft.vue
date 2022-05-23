@@ -1,66 +1,17 @@
 <template>
   <div
-    class="
-      w-full
-      pb-8
-      min-h-screen
-      pt-28
-      mx-auto
-      bg-gray-50
-      lg:pt-46
-      bg-gradient-to-r
-      from-indigo-700
-      to-indigo-200
-    "
+    class="w-full pb-8 min-h-screen pt-28 mx-auto bg-gray-50 lg:pt-46 bg-gradient-to-r from-indigo-700 to-indigo-200"
   >
     <h1
       class="text-2xl font-bold text-center text-white md:text-3xl xl:text-5xl"
     >
       发布你的NFT作品
     </h1>
-    <p
-      class="
-        px-2
-        mt-8
-        text-xs
-        font-bold
-        text-center text-white
-        md:text-lg
-        xl:text-base
-      "
-    >
-      因为是demo作品 目前只支持图片相关（jpg,jpeg,png,webp）和txt格式的文件
-    </p>
-    <p
-      class="
-        px-2
-        mt-1
-        text-xs
-        font-bold
-        text-center text-white
-        md:text-lg
-        xl:text-base
-      "
-    >
-      只支持200kb以内大小的文件上传，文件过大请压缩后再尝试发布
-      <a href="https://tinypng.com/" target="_blank" class="text-blue-200">
-        熊猫压缩
-      </a>
-    </p>
+
     <div
       v-show="!uploadFile"
       @click="uploadClick"
-      class="
-        mt-8
-        cursor-pointer
-        w-40
-        h-40
-        border border-dashed border-gray-200
-        mx-auto
-        flex
-        justify-center
-        items-center
-      "
+      class="mt-8 cursor-pointer w-40 h-40 border border-dashed border-gray-200 mx-auto flex justify-center items-center"
     >
       <img :src="plusImg" class="w-10 h-10 block" />
     </div>
@@ -82,55 +33,18 @@
         <input
           v-model="name"
           placeholder="输入名称"
-          class="
-            bg-white
-            rounded
-            text-sm
-            border-none
-            text-grey-darkest
-            flex-1
-            w-full
-            px-2
-            py-3
-            focus:ring-0
-            outline-none
-          "
+          class="bg-white rounded text-sm border-none text-grey-darkest flex-1 w-full px-2 py-3 focus:ring-0 outline-none"
         />
         <input
           v-model="price"
           placeholder="输入价格：ether,整数"
-          class="
-            bg-white
-            rounded
-            text-sm
-            border-none
-            text-grey-darkest
-            flex-1
-            w-full
-            px-2
-            mt-2
-            py-3
-            focus:ring-0
-            outline-none
-          "
+          class="bg-white rounded text-sm border-none text-grey-darkest flex-1 w-full px-2 mt-2 py-3 focus:ring-0 outline-none"
         />
         <textarea
           v-model="description"
           placeholder="输入一些描述"
           rows="4"
-          class="
-            bg-white
-            rounded
-            w-full
-            text-sm
-            border-none
-            text-grey-darkest
-            flex-1
-            mt-2
-            px-2
-            pt-2
-            focus:ring-0
-          "
+          class="bg-white rounded w-full text-sm border-none text-grey-darkest flex-1 mt-2 px-2 pt-2 focus:ring-0"
           name="tt"
         ></textarea>
       </div>

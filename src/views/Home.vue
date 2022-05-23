@@ -1,40 +1,17 @@
 <template>
   <div
-    class="
-      w-full
-      min-h-screen
-      mx-auto
-      bg-gray-50
-      lg:pt-8
-      bg-gradient-to-r
-      from-indigo-700
-      to-indigo-200
-    "
+    class="w-full min-h-screen mx-auto bg-gray-50 lg:pt-8 bg-gradient-to-r from-indigo-700 to-indigo-200"
   >
     <div
-      class="
-        max-w-screen-xl
-        px-4
-        py-12
-        mx-auto
-        sm:px-6
-        lg:py-16 lg:px-32 lg:flex lg:items-center lg:justify-between lg:mt-12
-        flex-col
-      "
+      class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-32 lg:flex lg:items-center lg:justify-between lg:mt-12 flex-col"
     >
       <h2
-        class="
-          text-3xl
-          font-extrabold
-          leading-9
-          tracking-tight
-          text-white
-          sm:text-4xl sm:leading-10
-        "
+        class="text-3xl font-extrabold leading-9 tracking-tight text-white sm:text-4xl sm:leading-10"
       >
-        基于以太坊和IPFS搭建的NFT DApp Demo
+        华赋新遗数字藏品平台
       </h2>
       <br />
+
       <p class="mt-12 text-2xl text-white">合约：Solidity</p>
       <p class="mt-2 text-2xl text-white">DApp开发环境：Hardhat</p>
       <p class="mt-2 text-2xl text-white">IPFS：Pinata</p>
