@@ -24,6 +24,7 @@ async function main() {
   console.log(config);
   let data = JSON.stringify(config);
   fs.writeFileSync("config.js", JSON.parse(data));
+  fs.writeFileSync("address.config.js", JSON.parse(data));
 }
 
 main()
