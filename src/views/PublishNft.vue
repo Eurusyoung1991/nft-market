@@ -143,7 +143,7 @@ async function submit(): Promise<void> {
       let result = await pinFileToIPFS(uploadFile.value);
       console.log(result);
 
-      if (result.statusText === "OK") {
+      if (result.status === 200) {
         const ipfsHash = result.data.IpfsHash;
         const url = `${ipfsUrl}${ipfsHash}`;
         // const data = JSON.stringify({
@@ -159,7 +159,7 @@ async function submit(): Promise<void> {
         console.log(data);
         // 将json通过pinata上传到IPFS
         result = await pinJSONToIPFS(data);
-        if (result.statusText === "OK") {
+        if (result.status === 200) {
           const jsonIpfsUrl = `${ipfsUrl}${result.data.IpfsHash}`;
           console.log("上传json到pinata json的ipfs地址：", jsonIpfsUrl);
           const isSuccess = await createNFT(jsonIpfsUrl, price.value);

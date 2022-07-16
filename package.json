@@ -2,7 +2,7 @@
   "name": "vite-ts-tailwind-starter",
   "version": "1.10.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite build && vite preview",
     "start": "yarn dev & wait-on tcp:3000 -v"

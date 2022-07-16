@@ -2,10 +2,10 @@ const hre = require("hardhat");
 const fs = require("fs");
 
 async function main() {
-  await hre.network.provider.request({
-    method: "hardhat_reset",
-    params: [],
-  });
+  // await hre.network.provider.request({
+  //   method: "hardhat_reset",
+  //   params: [],
+  // });
   const NFTMarket = await hre.ethers.getContractFactory("NFTMarket");
   const nftMarket = await NFTMarket.deploy();
   await nftMarket.deployed();
